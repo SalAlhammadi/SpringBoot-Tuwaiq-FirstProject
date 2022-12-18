@@ -66,7 +66,7 @@ public class StuController {
         if(stuAPI.isMajor(stuMajor))
             return ResponseEntity.status(200).body(stuAPI.getStuMajoredIn(stuMajor));
         else
-            return ResponseEntity.status(400).body("Student doesn't exist");
+            return ResponseEntity.status(400).body("Major doesn't exist");
 
     }
 
