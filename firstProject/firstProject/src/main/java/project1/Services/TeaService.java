@@ -43,8 +43,8 @@ public class TeaService {
 
     public String delTea(int TeaID) {
         for (int i = 0; i < TeacherDB.size(); i++) {
-            if (TeacherDB.get(i).getID() == TeaID)
-                TeacherDB.remove(TeaID);
+            if (TeacherDB.get(i).getID().equals(TeaID))
+                TeacherDB.remove(i);
         }
         return "Teacher deleted Successfully";
     }

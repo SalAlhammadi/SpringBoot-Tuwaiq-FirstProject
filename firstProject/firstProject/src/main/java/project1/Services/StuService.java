@@ -43,7 +43,7 @@ public class StuService {
     }
     public String updateStu(Student stu) {
         for (int i = 0; i < studentDB.size(); i++) {
-            if (studentDB.get(i).getID()  .equals(stu.getID()))
+            if (studentDB.get(i).getID().equals(stu.getID()))
                 studentDB.set(i, stu);
         }
 
@@ -52,8 +52,8 @@ public class StuService {
 
     public String delStu(int stuID) {
         for (int i = 0; i < studentDB.size(); i++) {
-            if (studentDB.get(i).getID() == stuID)
-                studentDB.remove(stuID);
+            if (studentDB.get(i).getID().equals(stuID))
+                studentDB.remove(i);
         }
         return "Student deleted successfully";
     }
