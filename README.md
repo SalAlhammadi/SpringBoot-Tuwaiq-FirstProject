@@ -1,6 +1,6 @@
-Student Class : ID , name , age , major( major enum { CS , MATH , Engineer )
+Student Class : ID, name, age, major (major enum [CS , MATH , Engineer]).
 
-Teacher Class : ID , name , salary
+Teacher Class : ID, name, salary.
 
 Endpoints :
 CRUD for Student&Teacher
